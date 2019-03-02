@@ -1,24 +1,45 @@
-import React from 'react';
 /* eslint react/prop-types: 0 */
-export default class NewTaskForm extends React.Component {
-  addTask = (e) => {
+import React from 'react';
+import _ from 'lodash';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
+
+const mapStateToProps = (state) => {
+  const props = {
+    text: state.text,
+  };
+  return props;
+};
+
+const actionCreators = {
+  updateNewTaskText: actions.updateNewTaskText,
+  addTask: actions.addTask,
+};
+
+class NewTaskForm extends React.Component {
+  handleAddTask = (e) => {
     e.preventDefault();
-    this.props.addTask({ text: this.props.newTaskText });
+    const { addTask, text } = this.props;
+    const task = { text, id: _.uniqueId(), state: 'active' };
+    addTask({ task });
   }
 
-  updateNewTaskText = e => this.props.updateNewTaskText({ text: e.target.value });
+  handleUpdateNewTaskText = () => {
+    const { updateNewTaskText, text } = this.props;
+    updateNewTaskText({ text });
+  }
 
   render() {
-    const { newTaskText } = this.props;
+    const { text } = this.props;
 
     return (
-      <form className="form-inline" onSubmit={this.addTask}>
+      <form className="form-inline" onSubmit={this.handleAddTask}>
         <div className="form-group mx-sm-3">
           <input
             type="text"
             required
-            value={newTaskText}
-            onChange={this.updateNewTaskText}
+            value={text}
+            onChange={this.handleUpdateNewTaskText}
           />
         </div>
         <button type="submit" className="btn btn-primary btn-sm">Add</button>
@@ -26,3 +47,5 @@ export default class NewTaskForm extends React.Component {
     );
   }
 }
+
+export default connect(mapStateToProps, actionCreators)(NewTaskForm);
