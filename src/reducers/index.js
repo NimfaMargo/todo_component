@@ -5,29 +5,48 @@ import * as actions from '../actions';
 
 const tasks = handleActions({
   [actions.addTask](state, { payload: { task } }) {
-    return { ...state, [task.id]: task };
+    const { byId, allIds } = state;
+    return {
+      ...state,
+      byId: { ...byId, [task.id]: task },
+      allIds: [task.id, ...allIds],
+    };
   },
   [actions.removeTask](state, { payload: { id } }) {
-    return _.omit(state, id);
+    const { byId, allIds } = state;
+    return {
+      ...state,
+      byId: _.omit(byId, id),
+      allIds: _.without(allIds, id),
+    };
   },
   [actions.toggleTaskState](state, { payload: { id } }) {
-    const task = state[id];
+    const task = state.byId[id];
     const newState = task.state === 'active' ? 'finished' : 'active';
     const updatedTask = { ...task, state: newState };
-    return { ...state, [task.id]: updatedTask };
+    return {
+      ...state,
+      byId: { ...state.byId, [task.id]: updatedTask },
+    };
   },
-}, {});
+  [actions.setTasksFilter](state, { payload: { filterName } }) {
+    return {
+      ...state,
+      currentFilterName: filterName,
+    };
+  },
+}, { byId: {}, allIds: [], currentFilterName: 'all' });
 
-const newTaskText = handleActions({
+const text = handleActions({
   [actions.addTask]() {
     return '';
   },
-  [actions.updateNewTaskText](state, { payload: { text } }) {
-    return text;
+  [actions.updateNewTaskText](state, { payload }) {
+    return payload.text;
   },
 }, '');
 
 export default combineReducers({
   tasks,
-  newTaskText,
+  text,
 });
