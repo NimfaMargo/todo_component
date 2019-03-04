@@ -1,4 +1,3 @@
-/* eslint react/prop-types: 0 */
 import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
@@ -16,24 +15,25 @@ const actionCreators = {
   addTask: actions.addTask,
 };
 
+/* eslint react/prop-types: 0 */
 class NewTaskForm extends React.Component {
   handleAddTask = (e) => {
     e.preventDefault();
     const { addTask, text } = this.props;
     const task = { text, id: _.uniqueId(), state: 'active' };
     addTask({ task });
-  }
+  };
 
-  handleUpdateNewTaskText = () => {
-    const { updateNewTaskText, text } = this.props;
-    updateNewTaskText({ text });
-  }
+  handleUpdateNewTaskText = (e) => {
+    const { updateNewTaskText } = this.props;
+    updateNewTaskText({ text: e.target.value });
+  };
 
   render() {
     const { text } = this.props;
 
     return (
-      <form className="form-inline" onSubmit={this.handleAddTask}>
+      <form action="" className="form-inline" onSubmit={this.handleAddTask}>
         <div className="form-group mx-sm-3">
           <input
             type="text"
@@ -42,10 +42,10 @@ class NewTaskForm extends React.Component {
             onChange={this.handleUpdateNewTaskText}
           />
         </div>
-        <button type="submit" className="btn btn-primary btn-sm">Add</button>
+        <input type="submit" className="btn btn-primary btn-sm" value="Add" />
       </form>
     );
   }
 }
-
+/* eslint react-redux/prefer-separate-component-file: 0 */
 export default connect(mapStateToProps, actionCreators)(NewTaskForm);
