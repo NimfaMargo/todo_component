@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { combineReducers } from 'redux';
 import { handleActions } from 'redux-actions';
+import { reducer as formReducer } from 'redux-form';
 import * as actions from '../actions';
 
 const tasks = handleActions({
@@ -37,16 +38,7 @@ const tasks = handleActions({
   },
 }, { byId: {}, allIds: [], currentFilterName: 'all' });
 
-const text = handleActions({
-  [actions.addTask]() {
-    return '';
-  },
-  [actions.updateNewTaskText](state, { payload }) {
-    return payload.text;
-  },
-}, '');
-
 export default combineReducers({
   tasks,
-  text,
+  form: formReducer,
 });
