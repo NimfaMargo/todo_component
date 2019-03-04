@@ -1,51 +1,43 @@
 import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
+import { Field, reduxForm } from 'redux-form';
 import * as actions from '../actions';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = () => {
   const props = {
-    text: state.text,
   };
   return props;
 };
 
 const actionCreators = {
-  updateNewTaskText: actions.updateNewTaskText,
   addTask: actions.addTask,
 };
 
 /* eslint react/prop-types: 0 */
 class NewTaskForm extends React.Component {
-  handleAddTask = (e) => {
-    e.preventDefault();
-    const { addTask, text } = this.props;
+  handleSubmit = (values) => {
+    const { text } = values;
     const task = { text, id: _.uniqueId(), state: 'active' };
-    addTask({ task });
-  };
-
-  handleUpdateNewTaskText = (e) => {
-    const { updateNewTaskText } = this.props;
-    updateNewTaskText({ text: e.target.value });
+    this.props.addTask({ task });
+    this.props.reset();
   };
 
   render() {
-    const { text } = this.props;
-
+    const { handleSubmit } = this.props;
     return (
-      <form action="" className="form-inline" onSubmit={this.handleAddTask}>
+      <form action="" className="form-inline" onSubmit={handleSubmit(this.handleSubmit)}>
         <div className="form-group mx-sm-3">
-          <input
-            type="text"
-            required
-            value={text}
-            onChange={this.handleUpdateNewTaskText}
-          />
-        </div>
+        <Field name="text" required component="input" type="text" />
+      </div>
         <input type="submit" className="btn btn-primary btn-sm" value="Add" />
       </form>
     );
   }
 }
 /* eslint react-redux/prefer-separate-component-file: 0 */
-export default connect(mapStateToProps, actionCreators)(NewTaskForm);
+const ConnectedNewTaskForm = connect(mapStateToProps, actionCreators)(NewTaskForm);
+
+export default reduxForm({
+  form: 'newTaskForm',
+})(ConnectedNewTaskForm);
