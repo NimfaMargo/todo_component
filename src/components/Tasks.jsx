@@ -15,7 +15,6 @@ const mapStateToProps = (state) => {
 const actionCreators = {
   removeTask: actions.removeTask,
   toggleTaskState: actions.toggleTaskState,
-  setTasksFilter: actions.setTasksFilter,
 };
 
 class Tasks extends React.Component {
