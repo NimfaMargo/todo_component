@@ -9,3 +9,5 @@ build:
 	NODE_ENV=production npm run webpack
 lint:
 	npx eslint .
+fix:
+	npx eslint . --fix
