@@ -1,0 +1,818 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store 1`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Store 2`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value="na-na"
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Store 3`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              na-na
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 4`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value="another task"
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              na-na
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 5`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              another task
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              na-na
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 6`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              <s>
+                another task
+              </s>
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              na-na
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 7`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-all"
+      type="button"
+    >
+      All Tasks
+    </button>
+    Active Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              na-na
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 8`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-all"
+      type="button"
+    >
+      All Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    Finished Tasks
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              <s>
+                another task
+              </s>
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 9`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              <s>
+                another task
+              </s>
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              na-na
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Store 10`] = `
+<div
+  class="col-5"
+>
+  <form
+    action=""
+    class="form-inline"
+  >
+    <div
+      class="form-group mx-sm-3"
+    >
+      <input
+        name="text"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <input
+      class="btn btn-primary btn-sm"
+      type="submit"
+      value="Add"
+    />
+  </form>
+  <div
+    class="mt-3 d-flex justify-content-around"
+  >
+    All Tasks
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-active"
+      type="button"
+    >
+      Active Tasks
+    </button>
+    <button
+      class="btn btn-link border-0 p-0"
+      data-test="task-filter-finished"
+      type="button"
+    >
+      Finished Tasks
+    </button>
+  </div>
+  <div
+    class="mt-3"
+  >
+    <div
+      class="mt-3"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          class="list-group-item d-flex"
+        >
+          <span
+            class="mr-auto"
+          >
+            <a
+              data-test="task-toggle-state"
+              href="#"
+            >
+              <s>
+                another task
+              </s>
+            </a>
+          </span>
+          <button
+            class="close"
+            data-test="task-remove"
+            type="button"
+          >
+            <span>
+              ×
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
